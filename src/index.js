@@ -14,4 +14,30 @@ const students = [
     { name: "Lorena", age: 34, email: "lorena@email.com" },
     { name: "Constanza", age: 28, email: "constanza@email.com" },
   ];
+
+  
+  
+
+  
+  
+  const studentList = document.getElementById("studentList");
+  
+  function printStudents() {
+    studentList.innerHTML = ""; // limpiar contenido existente
+  
+    students.forEach((student) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = `Name: ${student.name}, Age: ${student.age}`;
+    
+  
+      studentList.appendChild(listItem);
+    });
+  }
+  
+  printStudents(); // imprime los estudiantes
+  
+  
+  
+
+
   
